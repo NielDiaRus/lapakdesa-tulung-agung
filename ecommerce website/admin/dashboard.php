@@ -91,8 +91,8 @@ if(!isset($admin_id)){
             $number_of_products = $select_products->rowCount()
          ?>
          <h3><?= $number_of_products; ?></h3>
-         <p>produk ditambahkan</p>
-         <a href="products.php" class="btn">lihat produk</a>
+         <p>jumlah produk</p>
+         <a href="products.php" class="btn">tambah produk</a>
       </div>
 
       <div class="box">
