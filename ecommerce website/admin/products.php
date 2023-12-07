@@ -90,7 +90,7 @@ if(isset($_GET['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>products</title>
+   <title>Produk</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -103,28 +103,28 @@ if(isset($_GET['delete'])){
 
 <section class="add-products">
 
-   <h1 class="heading">add product</h1>
+   <h1 class="heading">Tambah Produk</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
       <div class="flex">
          <div class="inputBox">
-            <span>Nama Produk </span>
-            <input type="text" class="box" required maxlength="100" placeholder="Masukkan Nama Produk" name="name">
+            <span>nama produk </span>
+            <input type="text" class="box" required maxlength="100" placeholder="masukkan nama produk" name="name">
          </div>
          <div class="inputBox">
-            <span>Harga Produk (required)</span>
-            <input type="number" min="0" class="box" required max="9999999999" placeholder="Masukkan harga produk" onkeypress="if(this.value.length == 10) return false;" name="price">
+            <span>harga produk (required)</span>
+            <input type="number" min="0" class="box" required max="9999999999" placeholder="masukkan harga produk" onkeypress="if(this.value.length == 10) return false;" name="price">
          </div>
         <div class="inputBox">
-            <span>gambar 01 (required)</span>
+            <span>gambar 1 (required)</span>
             <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
         </div>
         <div class="inputBox">
-            <span>gambar 02 (required)</span>
+            <span>gambar 2 (required)</span>
             <input type="file" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
         </div>
         <div class="inputBox">
-            <span>gambar 03 (required)</span>
+            <span>gambar 3 (required)</span>
             <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
         </div>
          <div class="inputBox">
@@ -133,14 +133,14 @@ if(isset($_GET['delete'])){
          </div>
       </div>
       
-      <input type="submit" value="add product" class="btn" name="add_product">
+      <input type="submit" value="tambah produkt" class="btn" name="add_product">
    </form>
 
 </section>
 
 <section class="show-products">
 
-   <h1 class="heading">tambahkan produk</h1>
+   <h1 class="heading">produk ditambahkan</h1>
 
    <div class="box-container">
 
@@ -156,27 +156,20 @@ if(isset($_GET['delete'])){
       <div class="price">$<span><?= $fetch_products['price']; ?></span>/-</div>
       <div class="details"><span><?= $fetch_products['details']; ?></span></div>
       <div class="flex-btn">
-         <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">update</a>
-         <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+         <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">perbarui</a>
+         <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('Apakah Anda ingin menghapus produk ini?');">hapus</a>
       </div>
    </div>
    <?php
          }
       }else{
-         echo '<p class="empty">no products added yet!</p>';
+         echo '<p class="empty">belum ada produk ditambahkan</p>';
       }
    ?>
    
    </div>
 
 </section>
-
-
-
-
-
-
-
 
 <script src="../js/admin_script.js"></script>
    
