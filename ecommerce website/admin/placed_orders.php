@@ -34,7 +34,7 @@ if(isset($_GET['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>placed orders</title>
+   <title>Jumlah Pesanan</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -47,7 +47,7 @@ if(isset($_GET['delete'])){
 
 <section class="orders">
 
-<h1 class="heading">Pesanan</h1>
+<h1 class="heading">jumlah pesanan</h1>
 
 <div class="box-container">
 
@@ -58,10 +58,10 @@ if(isset($_GET['delete'])){
          while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
    ?>
    <div class="box">
-      <p> placed on : <span><?= $fetch_orders['placed_on']; ?></span> </p>
+      <p> tanggal dipesan : <span><?= $fetch_orders['placed_on']; ?></span> </p>
       <p> nama : <span><?= $fetch_orders['name']; ?></span> </p>
       <p> nomor : <span><?= $fetch_orders['number']; ?></span> </p>
-      <p> address : <span><?= $fetch_orders['address']; ?></span> </p>
+      <p> alamat : <span><?= $fetch_orders['address']; ?></span> </p>
       <p> total produk : <span><?= $fetch_orders['total_products']; ?></span> </p>
       <p> total harga : <span>$<?= $fetch_orders['total_price']; ?>/-</span> </p>
       <p> jenis pembayaran : <span><?= $fetch_orders['method']; ?></span> </p>
@@ -73,15 +73,15 @@ if(isset($_GET['delete'])){
             <option value="completed">selesai</option>
          </select>
         <div class="flex-btn">
-         <input type="submit" value="update" class="option-btn" name="update_payment">
-         <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('delete this order?');">delete</a>
+         <input type="submit" value="perbarui" class="option-btn" name="update_payment">
+         <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('delete this order?');">hapus</a>
         </div>
       </form>
    </div>
    <?php
          }
       }else{
-         echo '<p class="empty">no orders placed yet!</p>';
+         echo '<p class="empty">belum ada pesanan</p>';
       }
    ?>
 
@@ -90,17 +90,6 @@ if(isset($_GET['delete'])){
 </section>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="../js/admin_script.js"></script>
    
