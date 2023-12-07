@@ -54,7 +54,7 @@ if(isset($_GET['delete'])){
    <p> email : <span><?= $fetch_message['email']; ?></span></p>
    <p> nomor hp : <span><?= $fetch_message['number']; ?></span></p>
    <p> pesan : <span><?= $fetch_message['message']; ?></span></p>
-   <a href="messages.php??delete=<?= $fetch_message['id']; ?>" onclick="return confirm('Apakan Anda ingin menghapus pesan ini?');" class="delete-btn">hapus</a>
+   <a href="messages.php?delete=<?= $fetch_message['id']; ?>" onclick="return confirm('Apakan Anda ingin menghapus pesan ini?');" class="delete-btn">hapus</a>
    </div>
    <?php
          }
@@ -66,17 +66,6 @@ if(isset($_GET['delete'])){
 </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="../js/admin_script.js"></script>
    
