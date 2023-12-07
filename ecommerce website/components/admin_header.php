@@ -15,15 +15,15 @@
 
    <section class="flex">
 
-      <a href="../admin/dashboard.php" class="logo">Admin<span>Panel</span></a>
+      <a href="../admin/dashboard.php" class="logo">Panel<span>Admin</span></a>
 
       <nav class="navbar">
-         <a href="../admin/dashboard.php">home</a>
-         <a href="../admin/products.php">products</a>
-         <a href="../admin/placed_orders.php">orders</a>
-         <a href="../admin/admin_accounts.php">admins</a>
-         <a href="../admin/users_accounts.php">users</a>
-         <a href="../admin/messages.php">messages</a>
+         <a href="../admin/dashboard.php">dashboard</a>
+         <a href="../admin/products.php">produk</a>
+         <a href="../admin/placed_orders.php">pesanan</a>
+         <a href="../admin/admin_accounts.php">admin</a>
+         <a href="../admin/users_accounts.php">user</a>
+         <a href="../admin/messages.php">kotak pesan</a>
       </nav>
 
       <div class="icons">
@@ -38,7 +38,7 @@
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
          <p><?= $fetch_profile['name']; ?></p>
-         <a href="../admin/update_profile.php" class="btn">update profile</a>
+         <a href="../admin/update_profile.php" class="btn">perbarui profil</a>
          <div class="flex-btn">
             <a href="../admin/register_admin.php" class="option-btn">register</a>
             <a href="../admin/admin_login.php" class="option-btn">login</a>
