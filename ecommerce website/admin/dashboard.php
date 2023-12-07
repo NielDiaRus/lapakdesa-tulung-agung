@@ -38,7 +38,7 @@ if(!isset($admin_id)){
       <div class="box">
          <h3>Selamat Datang!</h3>
          <p><?= $fetch_profile['name']; ?></p>
-         <a href="update_profile.php" class="btn">Perbarui Profil</a>
+         <a href="update_profile.php" class="btn">perbarui profil</a>
       </div>
 
       <div class="box">
@@ -54,7 +54,7 @@ if(!isset($admin_id)){
          ?>
          <h3><span>Rp. </span><?= $total_pendings; ?><span>/-</span></h3>
          <p>total pesanan belum selesai</p>
-         <a href="placed_orders.php" class="btn">see orders</a>
+         <a href="placed_orders.php" class="btn">lihat pesanan</a>
       </div>
 
       <div class="box">
@@ -69,8 +69,8 @@ if(!isset($admin_id)){
             }
          ?>
          <h3><span>Rp. </span><?= $total_completes; ?><span>/-</span></h3>
-         <p>completed orders</p>
-         <a href="placed_orders.php" class="btn">Liat Produk</a>
+         <p>total pesanan selesai</p>
+         <a href="placed_orders.php" class="btn">lihat pesanan</a>
       </div>
 
       <div class="box">
@@ -80,8 +80,8 @@ if(!isset($admin_id)){
             $number_of_orders = $select_orders->rowCount()
          ?>
          <h3><?= $number_of_orders; ?></h3>
-         <p>Junlah Pesanan</p>
-         <a href="placed_orders.php" class="btn">Liat Produk</a>
+         <p>jumlah pesanan</p>
+         <a href="placed_orders.php" class="btn">lihat pesanan</a>
       </div>
 
       <div class="box">
@@ -91,8 +91,8 @@ if(!isset($admin_id)){
             $number_of_products = $select_products->rowCount()
          ?>
          <h3><?= $number_of_products; ?></h3>
-         <p>produk yang dimiliki</p>
-         <a href="products.php" class="btn">Liat Produk</a>
+         <p>produk ditambahkan</p>
+         <a href="products.php" class="btn">lihat produk</a>
       </div>
 
       <div class="box">
@@ -103,7 +103,7 @@ if(!isset($admin_id)){
          ?>
          <h3><?= $number_of_users; ?></h3>
          <p>jumlah user</p>
-         <a href="users_accounts.php" class="btn">Lihat user</a>
+         <a href="users_accounts.php" class="btn">lihat user</a>
       </div>
 
       <div class="box">
@@ -113,8 +113,8 @@ if(!isset($admin_id)){
             $number_of_admins = $select_admins->rowCount()
          ?>
          <h3><?= $number_of_admins; ?></h3>
-         <p>admin users</p>
-         <a href="admin_accounts.php" class="btn">Lihat admin</a>
+         <p>jumlah admin</p>
+         <a href="admin_accounts.php" class="btn">lihat admin</a>
       </div>
 
       <div class="box">
@@ -125,7 +125,7 @@ if(!isset($admin_id)){
          ?>
          <h3><?= $number_of_messages; ?></h3>
          <p>pesan baru</p>
-         <a href="messagess.php" class="btn">Lihat Kotak Pesan</a>
+         <a href="messagess.php" class="btn">lihat pesan</a>
       </div>
 
    </div>
