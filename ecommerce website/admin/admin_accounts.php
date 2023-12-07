@@ -38,13 +38,13 @@ if(isset($_GET['delete'])){
 
 <section class="accounts">
 
-   <h1 class="heading">akun admin</h1>
+   <h1 class="heading">Akun Admin</h1>
 
    <div class="box-container">
 
    <div class="box">
-      <p>tambahkan akun baru</p>
-      <a href="register_admin.php" class="option-btn">registrasi admin</a>
+      <p>Tambahkan akun baru</p>
+      <a href="register_admin.php" class="option-btn">Registrasi Admin</a>
    </div>
 
    <?php
@@ -75,17 +75,6 @@ if(isset($_GET['delete'])){
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="../js/admin_script.js"></script>
    
