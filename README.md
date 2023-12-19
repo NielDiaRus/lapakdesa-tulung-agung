@@ -8,8 +8,9 @@ Berikut adalah langkah-langkah instalasi proyek:
 3. Buka XAMPP Control Panel, kemudian klik start pada panel ‘apache’ dan ‘mysql’
 4. Unduh file .zip source code pada tautan berikut (https://github.com/NielDiaRus/lapakdesa-tulung-agung.git)
 5. Ekstrak file .zip yang diunduh pada folder ‘htdocs’ (folder htdocs terletak di folder XAMPP)
-6. Buka browser lalu ketik ‘localhost’
-7. Pilih sumber yang diekstrak dari localhost
+6. Input query database website ke localhost phpmyadmin sesuai nama database yang sudah diberikan
+7. Buka browser lalu ketik ‘localhost’
+8. Pilih sumber yang diekstrak dari localhost
 
 # Fitur Panel Admin
 1. Login atau logout
