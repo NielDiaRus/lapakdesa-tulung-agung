@@ -12,26 +12,26 @@ Berikut adalah langkah-langkah instalasi proyek:
 7. Pilih sumber yang diekstrak dari localhost
 
 # Fitur Panel Admin
-Login atau logout
-Halaman dashboard
-Daftar produk
-Tambah atau perbarui produk
-Daftar pesanan masuk
-Daftar akun admin
-Tambah atau perbarui akun admin
-Daftar akun user
-Kotak pesan
+1. Login atau logout
+2. Halaman dashboard
+3. Daftar produk
+4. Tambah atau perbarui produk
+5. Daftar pesanan masuk
+6. Daftar akun admin
+7. Tambah atau perbarui akun admin
+8. Daftar akun user
+9. Kotak pesan
 
 # Fitur Panel User
-Login atau logout
-Halaman home
-Informasi koperasi pemasaran
-Halaman pemesanan
-Daftar pesanan
-Informasi kontak
-Kolom pencarian
-Daftar produk yang disukai
-Keranjang belanja
-Tambah atau perbarui akun user
-Produk berdasarkan kategori
-Kirim pesan
+1. Login atau logout
+2. Halaman home
+3. Informasi koperasi pemasaran
+4. Halaman pemesanan
+5. Daftar pesanan
+6. Informasi kontak
+7. Kolom pencarian
+8. Daftar produk yang disukai
+9. Keranjang belanja
+10. Tambah atau perbarui akun user
+11. Produk berdasarkan kategori
+12. Kirim pesan
